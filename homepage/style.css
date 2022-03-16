@@ -1,0 +1,55 @@
+:root {
+  --font-family: Roboto, sans-serif;
+}
+
+body {
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url("./desktop-background.jpg");
+  }
+  svg {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+}
+
+.map--image path {
+  fill: rgb(127, 187, 255);
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.map--image path:hover {
+  fill: rgb(169, 207, 250);
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-family);
+  text-align: center;
+  text-justify: auto;
+}
+
+.map--image {
+  display: block;
+  justify-content: center;
+}
