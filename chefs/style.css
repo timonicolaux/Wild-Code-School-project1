@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("image_chefs/background.jpg");
+  background-size: cover;
+}
+
+.bouton {
+  height: 40px;
+  padding: 50px;
+}
+
+#carrousel {
+  width: 300px;
+  height: 200px;
+  border: solid 2px white;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
