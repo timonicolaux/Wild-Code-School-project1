@@ -1,0 +1,77 @@
+* {
+  font-family: roboto;
+  margin: 3%;
+}
+
+body {
+  background-image: url("/form/Img_form/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.info {
+  width: 100%;
+}
+/* Coordonnées */
+section {
+  margin: 20%px 0 20% 0;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  height: 30px;
+  margin: 10px;
+}
+.email {
+  display: flex;
+  margin: 5px 0 5px 0;
+}
+.phone {
+  display: flex;
+  margin: 5px 0 5px 0;
+}
+.location {
+  display: flex;
+  margin: 5px 0 5px 0;
+}
+
+/* Formulaire */
+form {
+  width: 60%;
+  padding: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.form_name {
+  padding: 1% 1% 2% 1%;
+  margin: 1%;
+  border: none;
+  background: #eaeaea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form_email {
+  padding: 1% 1% 2% 1%;
+  margin: 1%;
+  border: none;
+  background: #eaeaea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form_message {
+  padding: 1% 1% 30% 1%;
+  margin: 1%;
+  border: none;
+  background: #eaeaea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
