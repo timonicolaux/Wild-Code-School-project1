@@ -61,15 +61,14 @@ svg {
   padding: 0 1rem;
   min-width: fit-content;
   border: solid 0.1rem
-    linear-gradient(65deg, rgba(206, 109, 139, 0.5), rgba(255, 205, 205, 0.5));
+    linear-gradient(65deg, rgba(236, 236, 236, 0.5), rgba(255, 205, 205, 0.5));
   border-radius: 5px;
   overflow: scroll;
   box-sizing: border-box;
-  background-color: rgb(216, 155, 155, 0.5);
   background: linear-gradient(
     65deg,
-    rgba(206, 109, 139, 0.5),
-    rgba(255, 205, 205, 0.5)
+    rgba(236, 236, 236, 0.7),
+    rgba(230, 219, 219, 0.7)
   );
   position: absolute;
 }
@@ -80,7 +79,7 @@ svg {
 
 @media screen and (min-width: 500px) {
   .popup {
-    margin: 25% 30%;
+    margin: 15% 30%;
   }
 }
 
@@ -94,7 +93,7 @@ h2 {
   font-family: var(--font-family);
   color: var(--font-color);
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -102,12 +101,12 @@ p {
   color: var(--font-color);
   text-align: center;
   text-align: justify;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 
 input[type="submit"] {
   border: none;
-  background: linear-gradient(65deg, #16e7b3, #5ef9a4);
+  background: linear-gradient(65deg, #fff9e0, #e6dfc3);
   display: block;
   justify-content: center;
   min-width: fit-content;

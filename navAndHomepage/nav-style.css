@@ -14,8 +14,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aliceblue;
-
   min-height: 50px;
 }
 
