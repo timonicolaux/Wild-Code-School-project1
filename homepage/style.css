@@ -10,6 +10,8 @@ body {
   background-size: cover;
 }
 
+/* France map */
+
 @media screen and (min-width: 500px) {
   body {
     background-image: url("./desktop-background.jpg");
@@ -37,6 +39,26 @@ body {
   cursor: pointer;
 }
 
+.map--image {
+  display: block;
+  justify-content: center;
+}
+
+/* Popup */
+
+.popup {
+  display: block;
+  justify-content: center;
+  margin: 0 15% auto;
+  padding: 0 1rem;
+  min-width: fit-content;
+  border: solid 0.1rem black;
+  border-radius: 5%;
+  overflow: scroll;
+  box-sizing: border-box;
+  background-color: rgb(216, 155, 155, 0.5);
+}
+
 h1,
 h2 {
   font-family: var(--font-family);
@@ -46,10 +68,5 @@ h2 {
 p {
   font-family: var(--font-family);
   text-align: center;
-  text-justify: auto;
-}
-
-.map--image {
-  display: block;
-  justify-content: center;
+  text-align: justify;
 }
