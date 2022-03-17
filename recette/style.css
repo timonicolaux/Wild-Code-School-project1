@@ -3,82 +3,229 @@
 }
 
 body {
-    margin:0;
-    background-color: #F9F7F7;
-    font-family: roboto;
-    background-image: url("img/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+  margin: 0;
+  background-color: #f9f7f7;
+  font-family: roboto;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .navbar {
-    height: 50px;
-    width: 100%;
-    background-color: #dce1ce;
+  height: 50px;
+  width: 100%;
+  background-color: #dce1ce;
 }
 
 .head-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
-.bourguignon-img {
-    width: 40%;
-    height: 40%;
-    border-radius: 10px;
+.main-img {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
 }
 
 .point {
-    height: 30px;
-    width: 30px;
-    background-color: #D89B9B;
-    border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  background-color: #d89b9b;
+  border-radius: 5px;
 }
 
-.header>h1 {
-    text-align: center;
-    font-size: 0.8rem;
+.header > h1 {
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .recipe-infos {
-    display: flex;
-    justify-content: center;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recipe-infos ul {
-    width: 65%;
-    border-radius: 10px;
-    background-color: #F1DEDE;
-    padding: 10px;
-    font-size: 0.5rem;
-    padding: 10px 0px 10px 20px;
-    list-style: square;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #f1dede;
+  padding: 10px;
+  font-size: 0.5rem;
+  padding: 10px 0px 10px 20px;
+  list-style: square;
+  border: 1px solid #e4dddd;
 }
 
-.timer img {
-    width: 30%;
-    height: 40%;
+.recipe-infos .timer {
+  width: 12%;
+  height: 19%;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+.recipe-infos .difficulty {
+  width: 5%;
+  padding: 2px;
+  height: 3%;
+  margin-left: 3px;
+}
+
+.recipe-infos p {
+  font-size: 0.6em;
+  padding: 10px;
 }
 
 .main-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 10px;
 }
 
-.container {
-    display: flex;
+.main-container p {
+  font-size: 0.6em;
+}
+
+.main-container h3 {
+  text-align: center;
+  font-size: 0.8em;
+  color: #fba86f;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  justify-content: space-between;
 }
 
 .left {
-    width: 30%;
-    height: 100%
+  flex: 8;
 }
 
-.right
+.center {
+  flex: 1;
+  background-color: #e4dddd;
+  border-radius: 10px;
+}
 
+.right {
+  flex: 8;
+}
 
+.left .first-img {
+  width: 60%;
+  height: 18%;
+  border-radius: 5px;
+}
 
+.right .first-img {
+  width: 70%;
+  height: 17%;
+  border-radius: 5px;
+}
+
+.left .second-img {
+  width: 60%;
+  height: 18%;
+  border-radius: 5px;
+}
+
+.right .second-img {
+  width: 50%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.left .third-img {
+  width: 50%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.right .third-img {
+  width: 50%;
+  height: 15%;
+  border-radius: 5px;
+}
+
+.texte .right {
+}
+
+.etape {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+    
+    .point {
+	height: 60px;
+	width: 60px;
+	border-radius: 20px;
+    }
+
+    .main-img {
+	width: 30%;
+	height: 20%;
+	border-radius: 20px;
+    }
+
+    .header > h1 {
+	font-size: 1.5rem;
+    }
+
+    .recipe-infos ul {
+	width: 27%;
+	border-radius: 20px;
+	padding: 10px;
+	font-size: 1rem;
+	padding: 10px 0px 10px 40px;
+	border: 3px solid #e4dddd;
+    }
+
+    .recipe-infos .timer {
+	width: 6%;
+	height: 9%;
+    }
+
+    .recipe-infos .difficulty {
+	width: 3%;
+	height: 1%;
+    }
+
+    .recipe-infos p {
+	font-size: 1em;
+	padding: 20px;
+    }
+
+    .right {
+	flex: 13;
+    }
+
+    .left {
+	flex: 13;
+    }
+
+    .main-container p {
+	font-size: 1em;
+    }
+
+    .main-container {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto 
+    }
+    
+    .main-container h3 {
+	font-size: 1.5em;
+	
+    }
+}
