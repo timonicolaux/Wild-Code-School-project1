@@ -1,5 +1,6 @@
 :root {
-  --font-family: Roboto, sans-serif;
+  --font-family: "Roboto", sans-serif;
+  --font-color: rgb(44, 43, 43);
 }
 
 body {
@@ -8,6 +9,13 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+}
+
+header {
+  height: 70px;
+  background-color: aliceblue;
+  border-bottom: solid black 0.2rem;
 }
 
 /* France map */
@@ -52,21 +60,38 @@ body {
   margin: 0 15% auto;
   padding: 0 1rem;
   min-width: fit-content;
-  border: solid 0.1rem black;
-  border-radius: 5%;
+  border: solid 0.1rem linear-gradient(
+    65deg,
+    rgba(206, 109, 139, 0.5),
+    rgba(255, 205, 205, 0.5) );
+  border-radius: 5px;
   overflow: scroll;
   box-sizing: border-box;
   background-color: rgb(216, 155, 155, 0.5);
+  background: linear-gradient(
+    65deg,
+    rgba(206, 109, 139, 0.5),
+    rgba(255, 205, 205, 0.5) );
+  );
 }
 
-h1,
+h1 {
+  font-family: var(--font-family);
+  color: var(--font-color);
+  text-align: center;
+}
+
 h2 {
   font-family: var(--font-family);
-  text-align: center;
+  color: var(--font-color);
+  text-align: left;
+  font-size: 1rem;
 }
 
 p {
   font-family: var(--font-family);
+  color: var(--font-color);
   text-align: center;
   text-align: justify;
+  font-size: 0.6rem;
 }
