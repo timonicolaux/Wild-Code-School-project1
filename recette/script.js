@@ -1,9 +1,7 @@
-const progressBar = document.querySelector("#progressBar");
-progressBar.style.backgroundColor = "red";
+const start = document.querySelector("#button");
+const popup = document.querySelector(".popup");
 
-console.log(progressBar);
-
-progressBar.addEventListener("click", () => {
-  progressBar.style.backgroundColor = "red";
-  console.log("ert");
+start.addEventListener("click", (e) => {
+  e.preventDefault();
+  popup.style.display = "none";
 });
