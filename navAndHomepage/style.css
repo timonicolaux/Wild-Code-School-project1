@@ -22,7 +22,7 @@ body {
   margin: auto;
 }
 
-.map--image path {
+.map--image .land {
   fill: rgb(127, 187, 255);
   stroke: #fff;
   stroke-width: 1px;
@@ -30,12 +30,20 @@ body {
   cursor: pointer;
 }
 
-.map--image path:hover {
+.map--image .land:hover {
   fill: rgb(169, 207, 250);
   stroke: #fff;
   stroke-width: 1px;
   transition: fill 0.3s;
   cursor: pointer;
+}
+
+.map--image .land2 {
+  fill: rgb(133, 169, 211);
+  stroke: #fff;
+  stroke-width: 1px;
+  transition: fill 0.3s;
+  cursor: auto;
 }
 
 .map--image {
@@ -86,12 +94,12 @@ h2 {
   font-size: 1.5rem;
 }
 
-p {
+.popup p {
   font-family: var(--font-family);
   color: var(--font-color);
   text-align: center;
-  text-align: justify;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 input[type="submit"] {
@@ -105,7 +113,7 @@ input[type="submit"] {
   margin-top: 0.6rem;
   padding: 3px;
   border-radius: 150px;
-  font-size: 0.7rem;
+  font-size: 1rem;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: 0.3s ease;
@@ -115,9 +123,61 @@ input[type="submit"]:hover {
   transform: translateX(2px);
 }
 
+.info {
+  display: none;
+  justify-content: center;
+  margin: 105% 15% auto;
+  padding: 0 1rem;
+  min-width: fit-content;
+  border: solid 0.1rem
+    linear-gradient(65deg, rgba(236, 236, 236, 0.5), rgba(255, 205, 205, 0.5));
+  border-radius: 5px;
+  overflow: scroll;
+  box-sizing: border-box;
+  background: linear-gradient(
+    65deg,
+    rgba(236, 236, 236, 0.7),
+    rgba(230, 219, 219, 0.7)
+  );
+  position: absolute;
+}
+
+.info:hover {
+  filter: brightness(105%);
+}
+
+.info p {
+  font-family: var(--font-family);
+  color: var(--font-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 500px) {
+  body {
+    background-image: url("./desktop-background.jpg");
+  }
+  svg {
+    width: 50%;
+    display: block;
+    margin: auto;
+    top: 50%;
+    bottom: -50%;
+    left: 25%;
+  }
+  .cuistotsimg > img {
+    width: 30%;
+    margin-top: 4%;
+  }
+  .popup {
+    margin: 20% 30%;
+  }
+}
+
+@media screen and (min-width: 500px, max-width: 1200px) {
   body {
     background-image: url("./desktop-background.jpg");
   }
