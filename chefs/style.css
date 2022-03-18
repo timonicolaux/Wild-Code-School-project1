@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 
-img {
+.nos-chefs img {
   display: block;
   margin: auto;
   padding-top: 50px;
@@ -19,7 +19,7 @@ p {
   font-family: Roboto;
 }
 
-p {
+.nos-chefs p {
   background-color: beige;
   padding-bottom: 50px;
   border-right: 20px solid grey;
@@ -31,7 +31,7 @@ hr {
   width: 50%;
 }
 
-img {
+.nos-chefs img {
   max-width: 100%;
   height: auto;
 }
