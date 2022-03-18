@@ -18,7 +18,7 @@ body {
 }
 
 .navbar > img {
-  max-width: 80px;
+  max-width: ;
 }
 
 .navbar ul {
@@ -31,6 +31,7 @@ body {
   list-style: none;
   font-family: var(--font-family);
 }
+
 .navbar li:hover {
   background-color: rgb(225, 233, 233);
 }
@@ -65,10 +66,10 @@ body {
 }
 
 footer {
-  // position: absolute;
-  // position: fixed;
-  // bottom: 0;
-  //width: 100%;
+  //position: absolute;
+  //position: fixed;
+  //bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
