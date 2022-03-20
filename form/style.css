@@ -1,5 +1,6 @@
 * {
   font-family: roboto;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,20 +22,21 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-size: 1.4em;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .info {
   width: 100%;
+  margin: 0;
 }
 /* Coordonnées */
 section {
-  margin: 20%px 0 20% 0%;
+  margin: 10px 0px;
 }
-img {
-  height: 30px;
+.picto {
+  height: 28px;
   margin: 10px;
 }
 .email {
@@ -58,14 +60,12 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  margin-top: 30px;
 }
 
 .form_name {
   border: none;
   margin: 10px 0px;
-  padding-bottom: 14px;
+  padding: 22px 13px;
   height: 20px;
   background: #eaeaea;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -75,7 +75,7 @@ form {
 .form_email {
   border: none;
   margin: 10px 0px;
-  padding-bottom: 14px;
+  padding: 22px 13px;
   height: 20px;
   background: #eaeaea;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -84,8 +84,8 @@ form {
 
 .form_message {
   border: none;
-  margin: 10px 0px;
-  padding-bottom: 100px;
+  margin: 10px 0px 20px 0px;
+  padding: 22px 13px 60px 13px;
   height: 20px;
   background: #eaeaea;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -94,15 +94,15 @@ form {
 
 .form_button {
   border: none;
-  margin: 10px -4px;
+  margin: 10px 0px;
   padding: 10px 0px;
   background: #eaeaea;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: bold;
   text-align: center;
-  width: 100px;
+  width: 200px;
   font-size: 1em;
-  margin-left: auto;
+  margin: auto;
   cursor: pointer;
 }
 
@@ -111,7 +111,7 @@ input,
 select,
 textarea {
   font-size: 1em;
-  padding: 10px 0px 0px 5px;
+  padding: 10px 0px 10px 5px;
 }
 
 .form_button:hover {
@@ -119,9 +119,15 @@ textarea {
   background: black;
 }
 
+label {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 25px 0px 0px 0px;
+}
+
 /* DESKTOP */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
   body {
     background-image: url("/form/Img_form/desktop-background.jpg");
     background-repeat: no-repeat;
@@ -134,9 +140,9 @@ textarea {
     font-size: 2.2em;
   }
 
-  img {
-    height: 50px;
-    margin: 10px;
+  .picto {
+    height: 38px;
+    margin: 10px 0px;
   }
 
   .info {
@@ -148,14 +154,14 @@ textarea {
   }
 
   .email {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .phone {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .location {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .contact {
