@@ -12,7 +12,7 @@
   <body>
     <header>
       <nav class="navbar">
-        <img class="logo" src="img/toque-c-est-moi-le-chef.png" />
+        <img class="logo" src="img/logo4.png" />
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -20,8 +20,7 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a class="active"
-		   href="../navAndHomepage/homepage.html">Accueil</a></li>
+            <li><a class="active"href="../navAndHomepage/homepage.html">Accueil</a></li>
             <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
             <li><a href="recette-bouillabaisse.html">Les recettes</a></li>
             <li><a href="../form/index.html">Contact</a></li>
@@ -29,88 +28,133 @@
         </div>
       </nav>
     </header>
-    <section class="header">
-      <h1>La bouillabaisse</h1>
-      <div class="head-container">
-	<div class="point"></div>
-	<img class="main-img" src="img/bouillabaiss.jpeg"
-	     alt="choucroute">
-	<div class="point"></div>
+    <div class="head-container">
+      <div class="point"></div>
+      <img class="main-img" src="img/bouillabaiss.jpeg" alt="choucroute">
+      <div class="point"></div>
+    </div>
+    <h1> La bouillabaisse </h1>
+    <div class="recipe-infos">
+      <ul>
+  	<li><span class="qty">300</span> kg de poissons de mer</li>
+  	<li><span class="qty">150</span> g de fenouil </li>
+  	<li><span class="qty">20</span> g de céleri </li>
+  	<li><span class="qty">0.25</span> kg de rascasse </li>
+  	<li><span class="qty">1</span> langoustes </li>
+  	<li><span class="qty">0.25</span> kg de rouget grondin </li>
+  	<li><span class="qty">0.5</span> kg de pommes de terre</li>
+  	<li>Poivre et sel</li>
+      </ul>
+      <div class="all-infos">
+  	<div class="infos1">
+  	  <img class="timer" src="img/lhorloge.png" alt="timer">
+  	  <span>&nbsp&nbsp1 H</span>
+  	</div>
+  	<div class="infos2">
+  	  <img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
+  	  <img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
+  	  <span>&nbsp&nbsp&nbsp&nbspmoyen</span>
+  	</div>
+  	<div class="quantity">
+  	  <button class="increment" id="minus">↓</button>
+	  <span id="people">4</span><span>Pers</span>
+	  <button class="increment" id="plus">↑</button>
+  	</div>
       </div>
-      <div class="recipe-infos">
-	<ul>
-	  <li>1,5 kg de poissons de mer</li>
-	  <li>600 g de fenouil </li>
-	  <li>100 g de céleri </li>
-	  <li>1 kg de rascasse </li>
-	  <li>4 langoustes </li>
-	  <li>1 kg de rouget grondin </li>
-	  <li>2 kg de pommes de terre</li>
-	  <li>Poivre et sel</li>
-	</ul>
-	<img class="timer" src="img/lhorloge.png" alt="timer">
-	<p>1 H</p>
-	<img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
-	<img class="difficulty" src="img/casserole.png" alt="icon-difficulte" />
-	<p>moyen</p>
-      </div>	
-      <div class="main-container">
-	<div class="block left">
-	  <img class="first-img"src="img/fenouil.jpg" alt="fenouil">
-	  <div class="etape">
-	    <h3>5 - 10 min</h3>
-	    <p>
-	      Nullam eu ante vel est convallis dignissim.  
-	      Fusce suscipit, wisi nec facilisis facilisis.
-	    </p>
-	  </div>
-	  <img class="second-img" src="img/moule.jpg" alt="moule">
-	  <div class="etape">
-	      <h3>15 - 20 min</h3>
-	      <p>
-		Nullam eu ante vel est convallis dignissim.  
-		Fusce suscipit, wisi nec facilisis facilisis.
-	      </p>
-	  </div>
-	  <img class="third-img" src="img/baies-de-genievre.jpg" alt="genievre">
-	  <div class="etape">
-	    <h3>5 - 10 min</h3>
-	    <p>
-	      Nullam eu ante vel est convallis dignissim.
-	      Fusce suscipit, wisi nec facilisis facilisis.
-	    </p>
-	  </div>
-	</div>
-	<div class="block center" id="#progressBar">
-	</div>
-	<div class="block right">
-	  <div class="etape">
-	    <h3>0 - 5 min</h3>
-	    <p>
-	      Nullam eu ante vel est convallis dignissim.  
-	      Fusce suscipit, wisi nec facilisis facilisis.
-	    </p>
-	  </div>
-	  <img class="first-img" src="img/poisson-bouillabaisse.jpeg" alt="poisson">
-	  <div class="etape">
-	    <h3>15 - 20 min</h3>
-	    <p>
-	      Nullam eu ante vel est convallis dignissim.  
-	      Fusce suscipit, wisi nec facilisis facilisis.
-	    </p>
-	  </div>
-	  <img class="second-img" src="img/laurier.jpg" alt="laurier">
-	  <div class="etape">
-	    <h3>10 - 15 min</h3>
-	    <p>
-	      Nullam eu ante vel est convallis dignissim.  
-	      Fusce suscipit, wisi nec facilisis facilisis.
-	    </p>
-	  </div>
-	  <img class="third-img" src="img/epices.jpeg" alt="epice">
-	</div>
+    </div>
+    <div class="main-container">
+      <div class="progress-bar"></div>
+      <div class="block one">
+  	<img class="first-img"src="img/fenouil.jpg" alt="fenouil">
+	<div class="space"></div>
+  	<div class="etape">
+  	  <h3>5 - 10 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
       </div>
-    </section>
+      <div class="block two">
+  	<img class="second-img" src="img/moule.jpg" alt="moule">
+	<div class="space"></div>
+  	<div class="etape">
+  	  <h3>15 - 20 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+      </div>
+      <div class="block three">
+  	<img class="third-img" src="img/baies.jpg" alt="genievre">
+	<div class="space"></div>
+  	  <div class="etape">
+  	    <h3>5 - 10 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+      </div>
+      <div class="block four">
+  	<div class="etape">
+  	  <h3>0 - 5 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="fourth-img" src="img/poisson-bouillabaisse.jpeg" alt="poisson">
+      </div>
+      <div class="block five">
+  	<div class="etape">
+  	  <h3>15 - 20 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="fifth-img" src="img/laurier.jpg" alt="laurier">
+      </div>
+      <div class="block six">
+  	<div class="etape">
+  	  <h3>10 - 15 min</h3>
+  	  <p>
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Nullam eu ante vel est convallis dignissim.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	    Fusce suscipit, wisi nec facilisis facilisis.
+  	  </p>
+  	</div>
+	<div class="space"></div>
+  	<img class="sixth-img" src="img/epices.jpeg" alt="epice">
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p>LES CUISTOS © 2022 Tous droits réservés.</p>
@@ -119,4 +163,4 @@
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="nav-script.js"></script>
   </body>
-  </html>
+</html>
