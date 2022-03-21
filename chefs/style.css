@@ -19,8 +19,15 @@ p {
   font-family: Roboto;
 }
 
+.titre {
+  border: 1px solid pink;
+  padding: 30px;
+  font-size: 30px;
+  font-family: Roboto;
+}
+
 .nos-chefs p {
-  background-color: beige;
+  background-color: pink;
   padding-bottom: 50px;
   border-right: 20px solid grey;
   margin: 50px;
@@ -47,7 +54,7 @@ hr {
 #g {
   left: 0;
   transform: rotate(0deg);
-  margin-top: -40px;
+  margin-top: -50px;
 }
 
 #d {
