@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav-footer/nav-style.css" />
+    <link rel="stylesheet" href="caroussel.css">
+    <title>recette du boeuf bourguignon</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a class="active" href="../index.html">Accueil</a></li>
+            <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
+            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
+            <li><a href="../form/form.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="caroussel">
+      <div class="slideshow-container">
+	<div class="mySlides">
+	  <img src="../img/boeuf-bourguignon1.jpeg">
+	</div>
+	<div class="mySlides">
+	  <img  src="../img/boeuf-bourguignon2.jpg">
+	</div>
+	<div class="mySlides">
+	  <img src="../img/boeuf-bourguignon3.jpeg">
+	</div>
+	<div class="mySlides">
+	  <img src="../img/boeuf-bourguignon4.jpg">
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <br>
+      <div class="dot-btn">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+    </div>
+      <h1>Le boeuf bourguignon</h1>
+      <div class="recipe-infos">
+	<ul>
+	  <li><span class="qty">0.25</span> kg de viande de boeuf</li>
+	  <li><span class="qty">0.5</span> oignons</li>
+	  <li><span class="qty">1</span> carottes</li>
+	  <li><span class="qty">10</span> cl vin rouge</li>
+	  <li><span class="qty">50</span> g champignons de Paris</li>
+	  <li><span class="qty">25</span> g de lardons</li>
+	  <li><span class="qty">0.5</span> gousse d'ail'</li>
+	</ul>
+	<div class="all-infos">
+  	  <div class="infos1">
+  	    <img class="timer" src="../img/lhorloge.png" alt="timer">
+  	    <span>&nbsp&nbsp1H30</span>
+  	  </div>
+  	  <div class="infos2">
+  	    <img class="difficulty" src="../img/casserole.png" alt="icon-difficulte" />
+  	    <img class="difficulty" src="../img/casserole.png" alt="icon-difficulte" />
+  	    <span>&nbsp&nbsp&nbsp&nbspmoyen</span>
+  	  </div>
+  	  <div class="quantity">
+  	    <button class="increment" id="minus">↓</button>
+	    <span id="people">4</span><span> Pers</span>
+	    <button class="increment" id="plus">↑</button>
+  	  </div>
+	</div>
+      </div>	
+      <div class="main-container">
+	<div class="progress-bar"></div>
+	<div class="block one">
+  	  <img class="first-img"src="../img/carotte.jpg" alt="carotte">
+	  <div class="space"></div>
+  	  <div class="etape">
+  	    <h3>5 - 10 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	</div>
+	<div class="block two">
+  	  <img class="second-img" src="../img/decoupe.jpg" alt="decoupe-boeuf">
+	  <div class="space"></div>
+  	  <div class="etape">
+  	    <h3>15 - 20 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	</div>
+	<div class="block three">
+  	  <img class="third-img" src="../img/plat-final.jpg" alt="plat-final">
+	  <div class="space"></div>
+  	  <div class="etape">
+  	    <h3>5 - 10 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	</div>
+	<div class="block four">
+  	  <div class="etape">
+  	    <h3>0 - 5 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	  <div class="space"></div>
+  	  <img class="fourth-img" src="../img/sauce-vin.jpg" alt="sauce-vin">
+	</div>
+	<div class="block five">
+  	  <div class="etape">
+  	    <h3>15 - 20 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	  <div class="space"></div>
+  	  <img class="fifth-img" src="../img/sel-poivre.jpg" alt="sel-poivre">
+	</div>
+	<div class="block six">
+  	  <div class="etape">
+  	    <h3>10 - 15 min</h3>
+  	    <p>
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Nullam eu ante vel est convallis dignissim.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	      Fusce suscipit, wisi nec facilisis facilisis.
+  	    </p>
+  	  </div>
+	  <div class="space"></div>
+  	  <img class="sixth-img" src="../img/riz.jpeg" alt="riz">
+	</div>
+      </div>
+    <footer>
+      <div class="footer-container">
+        <p>LES CUISTOS © 2022 Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="caroussel.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../nav-footer/nav-script.js"></script>
+    <link rel="stylesheet" href="nav-style.css" />
+  </body>
+  </html>
+
+

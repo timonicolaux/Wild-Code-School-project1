@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../nav-footer/nav-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   <header>
+      <nav class="navbar">
+        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a class="active" href="../index.html">Accueil</a></li>
+            <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
+            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
+            <li><a href="../form/form.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Contactez-nous</h1>
+      <section class="info">
+        <div class="email">
+          <img
+            class="picto"
+            src="../img/picto_email.png"
+            alt="pictogramme email"
+          />
+          <p>
+            <a class="contact" href="mailto:les-cuisetot-de-la-wild@gmail.com">
+              les-cuisetot-de-la-wild@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="phone">
+          <img
+            class="picto"
+            src="../img/picto_phone.png"
+            alt="pictogramme téléphone"
+          />
+          <p class="contact">06 00 00 00 00</p>
+        </div>
+        <div class="location">
+          <img
+            class="picto"
+            src="../img/picto_location.png"
+            alt="pictogramme localisation"
+          />
+          <p class="contact">17 Rue Delandine, 69002 Lyon</p>
+        </div>
+      </section>
+      <form action="">
+        <label for="name">Votre nom</label>
+        <input id="name" ype="text" placeholder="Paul Bocuse" class="form_name" />
+        <label for="email">Votre email</label>
+        <input
+          id="email" type="email"
+          placeholder="paul.bocuse@gmail.com"
+          class="form_email"
+        />
+        <label for="message">Votre message</label>
+        <input type="text" id="message" placeholder="Message" class="form_message" />
+        <input type="submit" value="Envoyer" class="form_button" />
+      </form>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p>LES CUISTOS © 2022 Tous droits réservés.</p>
+      </div>
+    </footer>
+    <script src="../nav-footer/nav-script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
