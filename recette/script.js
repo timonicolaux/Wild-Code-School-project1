@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+//********************** GESTION DES QUANTITES *******************
+
 function setQuantity(list, nbr, qty) {
   for (let i = 0; i < list.length; i++) {
     let val = qty[i] * parseFloat(nbr.innerText);
@@ -40,4 +42,15 @@ btnPlus.addEventListener("click", function () {
   }
   nbrPeople.innerText = val.toString();
   setQuantity(quantityList, nbrPeople, quantityForOne);
+});
+
+//************************* PROGRESS BAR *************************
+
+window.addEventListener("scroll", () => {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.height = scrolled + "%";
 });
