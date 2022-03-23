@@ -53,4 +53,25 @@ window.addEventListener("scroll", () => {
     document.documentElement.clientHeight;
   let scrolled = (winScroll / height) * 100;
   document.getElementById("bar").style.height = scrolled + "%";
+  //console.log(scrolled);
+
+  // console.log("scrollHeight", document.documentElement.scrollHeight); // 1646 valeur fixe
+  // console.log("scrollTop", document.body.scrollTop); //0 valeur fixe
+  // console.log("scrollTop", document.documentElement.scrollTop); // de 0 a ..
+  // console.log("clientHeight", document.documentElement.clientHeight); // 812 fixe
+  // console.log("scrolled", scrolled);
+  // console.log("------------------------------------------------------");
+});
+
+//************************* SCROLL UP ****************************
+
+const scrollUp = document.querySelector(".arrow-up");
+const ingredients = document.querySelector(".caroussel");
+console.log(ingredients);
+scrollUp.addEventListener("click", () => {
+  ingredients.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
 });

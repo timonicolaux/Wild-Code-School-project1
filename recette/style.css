@@ -130,6 +130,7 @@ h1:after {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .main-container p {
@@ -215,7 +216,29 @@ p:first-letter {
   border-radius: 10px;
 }
 
+.scrollTop {
+  font-size: 1.5em;
+}
+
+.arrow-up {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
 @media screen and (min-width: 500px) {
+  body {
+    margin: 0;
+    background-color: #f9f7f7;
+    font-family: roboto;
+    background-image: url("../img/desktop-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .head-container {
     max-width: 50%;
     margin-left: auto;
@@ -224,7 +247,7 @@ p:first-letter {
 
   .recipe-infos {
     justify-content: space-between;
-    max-width: 45%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -234,20 +257,20 @@ p:first-letter {
     width: 60px;
     border-radius: 20px;
   }
-    .caroussel {
-	margin-top: 20px;
-	height: 300px;
-    }
+  .caroussel {
+    margin-top: 20px;
+    height: 300px;
+  }
 
-    .caroussel img {
-	border-radius: 10px;
-	width: 350px;
-	height: 240px;
-    }
+  .caroussel img {
+    border-radius: 10px;
+    width: 350px;
+    height: 240px;
+  }
 
-    h1 {
-	font-size: 2rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
   .recipe-infos ul {
     width: auto;
@@ -306,5 +329,9 @@ p:first-letter {
 
   .block {
     height: auto;
+  }
+
+  .arrow-up {
+    margin-left: 20px;
   }
 }
