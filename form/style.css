@@ -125,11 +125,29 @@ label {
   margin: 25px 0px 0px 0px;
 }
 
+.formValid {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.formValid > p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.formValid > img {
+  width: 100%;
+  margin-top: 40px;
+}
+
 /* DESKTOP */
 
 @media screen and (min-width: 500px) {
   body {
-    background-image: url("/form/Img_form/desktop-background.jpg");
+    background-image: url("../img/desktop-background.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;

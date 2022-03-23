@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../nav-footer/nav-style.css" />
     <link
@@ -63,19 +63,22 @@
           <p class="contact">17 Rue Delandine, 69002 Lyon</p>
         </div>
       </section>
-      <form action="">
+      <form class= form name= "contact" action="" id="contactForm">
         <label for="name">Votre nom</label>
-        <input id="name" ype="text" placeholder="Paul Bocuse" class="form_name" />
+        <input id="name" type="text" placeholder="Paul Bocuse" class="form_name" name="name" required="required"/>
         <label for="email">Votre email</label>
         <input
           id="email" type="email"
           placeholder="paul.bocuse@gmail.com"
           class="form_email"
+          name="email"
+          required="required"
         />
         <label for="message">Votre message</label>
-        <input type="text" id="message" placeholder="Message" class="form_message" />
+        <input type="text" id="message" placeholder="Message" class="form_message" name="message" required="required"/>
         <input type="submit" value="Envoyer" class="form_button" />
       </form>
+    <div class="formValid"></div>
     </div>
     <footer>
       <div class="footer-container">
@@ -86,3 +89,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
