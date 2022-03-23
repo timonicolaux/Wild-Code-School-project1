@@ -1,0 +1,189 @@
+/*=============== Url du font qu'on à choisi ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/*=============== Variables CSS ===============*/
+:root {
+  --font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(/img/desktop-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.navbar {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+}
+
+.navbar > img {
+  max-width: 80px;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  font-family: var(--font-family);
+}
+.navbar li:hover {
+  background-color: rgb(225, 233, 233);
+  border-radius: 25px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  color: black;
+}
+
+.navbar li:hover {
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+
+/*================================ QUIZ SECTION =============================*/
+.image {
+    width: 620px; 
+
+}
+
+
+.quiz-container {
+    background-color: #f5f7f7;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+}
+
+.quiz-header {
+    padding: 4px;
+}
+
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+ 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    display: block;
+    color: #f5f7f7;
+    width: 100%;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: #e09d83;
+    
+}
+button:hover {
+    background-color: #a35638;
+}
+
+button:focus {
+    outline: none;
+    background-color: #44b927;
+}
+
+
+
+
+
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-container > p {
+  font-size: 0.7em;
+  color: #f1a896;
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+@media screen and (max-width: 500px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
