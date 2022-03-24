@@ -32,7 +32,9 @@ body {
 .navbar li {
   list-style: none;
   font-family: var(--font-family);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-right: 30px;
 }
 .navbar li:hover {
   background-color: rgb(225, 233, 233, 0.5);
@@ -147,6 +149,7 @@ footer {
     height: calc(100vh - 80px);
     top: 80px;
     transition: all 0.5s ease-in-out;
+    background-color: rgb(225, 233, 233, 0.9);
   }
 
   .show-nav .navbar-links {
@@ -166,10 +169,11 @@ footer {
   }
   .navbar-links li {
     text-align: center;
+    margin-top: 40px;
+    margin-right: 0;
   }
   .navbar-links li a {
     padding: 0.5rem 1rem;
-    background-color: rgb(225, 233, 233, 0.7);
   }
   .navbar-links.active {
     display: flex;
