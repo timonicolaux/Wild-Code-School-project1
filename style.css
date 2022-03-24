@@ -158,6 +158,7 @@ input[type="submit"]:hover {
   }
   svg {
     width: 200%;
+    max-width: fit-content;
     margin: 10% -50%;
     align-self: center;
   }
