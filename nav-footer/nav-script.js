@@ -3,7 +3,6 @@ const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const navBar = document.querySelector(".navbar");
 let menuOpen = false;
 
-
 toggleButton.addEventListener("click", () => {
   navBar.classList.toggle("show-nav");
 
