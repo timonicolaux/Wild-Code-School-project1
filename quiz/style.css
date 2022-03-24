@@ -31,6 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;   
+    margin-top: 20px;
 }
 
 .quiz-container {
@@ -51,6 +52,7 @@ body {
     width: 600px;
     padding-bottom: 10px;
 }
+
 
 h1 {
     padding: 1.5rem;
@@ -79,6 +81,10 @@ ul li {
 
 ul li label {
     cursor: pointer;
+}
+
+.title {
+    margin-top: 30px;
 }
 
 button {
@@ -113,11 +119,14 @@ footer {
 @media screen and (max-width: 500px) {
 
     .image {
-        width: 250px; 
+        width: 370px;
+        border-radius: 20px;
+        text-align: center;
+        padding-bottom: 10px;
     }
 
     .quiz-container {
-        width: 90%;
+        width: 80%;
     }
 
     body {
