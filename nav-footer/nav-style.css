@@ -20,13 +20,16 @@ body {
 }
 
 .navbar > img {
-  max-width: 80px;
+  margin-top: 10px;
+  margin-left: 15px;
+  max-width: 130px;
 }
 
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
+  margin-top: 15px;
 }
 
 .navbar li {
