@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/lescuistots3.png" type="image/x-icon">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <header>
+      <nav class="navbar">
+        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a class="active" href="../index.html">Accueil</a></li>
+            <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
+            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
+            <li><a href="../form/form.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+
+        <div class="quiz-container" id="quiz">
+            <img src="/img/chefs/im1.jpg" alt="chef" class="image">
+            
+            <div class="quiz-header">
+                <h2 id="question">Quel est le nom du plat que vous voyez dans l'image?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Pates</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Riz</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Pizza</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Burger</label>
+                    </li>
+                </ul>
+                <button id="submit">Envoyer</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

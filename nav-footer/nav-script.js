@@ -2,6 +2,7 @@ const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const navBar = document.querySelector(".navbar");
 let menuOpen = false;
+
 const carousselImg = document.querySelector(".slideshow-container");
 
 toggleButton.addEventListener("click", () => {
