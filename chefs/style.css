@@ -6,6 +6,52 @@ body {
   background-size: cover;
 }
 
+footer {
+  padding-top: 300px;
+}
+
+#container {
+  width: 800px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border: 1px solid black;
+}
+
+#carroussel {
+  padding: 1em;
+  height: 100%;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+#texte {
+  display: flex;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.item-t {
+  font-size: 1.5em;
+}
+
+.item-t,
+.item-i {
+  display: none;
+  width: 800px;
+  height: 600px;
+}
+
+.item-t.active-carrousel,
+.item-i.active-carrousel {
+  display: block;
+}
+
 .nos-chefs img {
   display: block;
   margin: auto;
@@ -19,11 +65,18 @@ p {
   font-family: Roboto;
 }
 
+h1 {
+  font-size: 5em;
+}
+
 .titre {
   border: 1px solid pink;
   padding: 30px;
-  font-size: 30px;
+  font-size: 40px;
   font-family: Roboto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .nos-chefs p {
@@ -37,23 +90,4 @@ p {
 .nos-chefs img {
   max-width: 100%;
   height: auto;
-}
-
-.bouton {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  position: absolute;
-  margin: 10px;
-}
-
-#g {
-  left: 0;
-  transform: rotate(0deg);
-  margin-top: -50px;
-}
-
-#d {
-  right: 0;
-  transform: rotate(180deg);
 }
