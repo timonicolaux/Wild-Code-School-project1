@@ -1,35 +1,40 @@
 const quizData = [
     {
-        question: "Quel est le nom du plat que vous voyez dans l'image?",
-        a: "Pates a la bolognaise",
+        question: "Quel est le nom du plat que vous voyez sur l'image ?",
+        a: "Pâtes à la bolognaise",
         b: "La choucroute",
         c: "Gratin dauphinois",
-        d: "Puré de tomate",
+        d: "Purée de tomate",
         correct: "c",
+        image: "../img/gratin3.jpg"
     },
     {
-        question: "Quel est le nom du chef que vous voyez dans l'image?",
+        question: "Quel est le nom du chef que vous voyez sur l'image?",
         a: "Hélène Darroze",
         b: "Alain Passard",
         c: "Paul Bocuse",
         d: "Cyril Gignac",
-        correct: "a",
+        correct: "c",
+        image: "../img/im4.jpg"
     },
     {
-        question: "Quel est le nom de la ville que vous voyez dans l'image?",
+        question: "Quel est le nom de la ville que vous voyez sur l'image?",
         a: "Lyon",
         b: "Lugundum",
         c: "Saint-Etienne",
         d: "Biarritz",
         correct: "a",
+        image: "../img/lyon.jpg"
     },
     {
-        question: "Quel est le nom du chef que vous voyez dans l'image?",
-        a: "pierre",
-        b: "aic",
-        c: "igor",
-        d: "Pizza",
+        question: "Quel est le meilleur poject de la Wild?",
+        a: "Snake",
+        b: "Tokyo Express",
+        c: "You&Me",
+        d: "Les Cuistots",
         correct: "d",
+        image: "../img/lescuistots.png"
+
     },
 ];
 
@@ -41,6 +46,8 @@ const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
 const submitBtn = document.getElementById('submit')
+const img = document.querySelector('.image')
+
 
 let currentQuiz = 0
 let score = 0
@@ -52,6 +59,8 @@ function loadQuiz() {
     deselectAnswers()
 
     const currentQuizData = quizData[currentQuiz]
+    img.src = quizData[currentQuiz].image
+    console.log(img)
 
     questionEl.innerText = currentQuizData.question
     a_text.innerText = currentQuizData.a
@@ -87,9 +96,12 @@ submitBtn.addEventListener('click', () => {
             loadQuiz()
         } else {
             quiz.innerHTML = 
-            `<h2>Vous avez répondu ${score}/${quizData.length} questions correctement</h2>
-             <button onclick="location.reload()">Reload</button>
             `
+             <img src="../img/crazy-chef-happy-expression.jpg" alt="chef" class="image">
+             <h2>Vous avez répondu ${score}/${quizData.length} questions correctement</h2>
+             <button onclick="location.reload()">Recharger</button>
+            `
+            document.querySelector('.image').style.display = 'none';
         }
     }
 
