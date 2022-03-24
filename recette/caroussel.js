@@ -76,7 +76,6 @@ if (autoSwip === true) {
 
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " select";
-    console.log(slideIndex);
     setTimeout(showSlides, 2000);
   }
 }
