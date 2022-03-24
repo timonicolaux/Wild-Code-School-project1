@@ -149,8 +149,8 @@ footer {
     right: -100%;
     width: 100%;
     flex-direction: column;
-    height: calc(100vh - 80px);
-    top: 80px;
+    height: calc(100vh - 50px);
+    top: 50px;
     transition: all 0.5s ease-in-out;
     background-color: rgb(225, 233, 233, 0.9);
   }
