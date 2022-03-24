@@ -1,5 +1,27 @@
 /*jshint esversion: 6 */
 
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const navBar = document.querySelector(".navbar");
+let menuOpen = false;
+
+const carousselImg = document.querySelector(".slideshow-container");
+
+toggleButton.addEventListener("click", () => {
+  navBar.classList.toggle("show-nav");
+  carousselImg.classList.toggle("hide-caroussel");
+
+  if (!menuOpen) {
+    toggleButton.classList.add("open");
+    menuOpen = true;
+  } else {
+    toggleButton.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
+//********************** GESTION DES QUANTITES *******************
+
 function setQuantity(list, nbr, qty) {
   for (let i = 0; i < list.length; i++) {
     let val = qty[i] * parseFloat(nbr.innerText);
@@ -40,4 +62,36 @@ btnPlus.addEventListener("click", function () {
   }
   nbrPeople.innerText = val.toString();
   setQuantity(quantityList, nbrPeople, quantityForOne);
+});
+
+//************************* PROGRESS BAR *************************
+
+window.addEventListener("scroll", () => {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("bar").style.height = scrolled + "%";
+  //console.log(scrolled);
+
+  // console.log("scrollHeight", document.documentElement.scrollHeight); // 1646 valeur fixe
+  // console.log("scrollTop", document.body.scrollTop); //0 valeur fixe
+  // console.log("scrollTop", document.documentElement.scrollTop); // de 0 a ..
+  // console.log("clientHeight", document.documentElement.clientHeight); // 812 fixe
+  // console.log("scrolled", scrolled);
+  // console.log("------------------------------------------------------");
+});
+
+//************************* SCROLL UP ****************************
+
+const scrollUp = document.querySelector(".arrow-up");
+const ingredients = document.querySelector(".caroussel");
+console.log(ingredients);
+scrollUp.addEventListener("click", () => {
+  ingredients.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
 });

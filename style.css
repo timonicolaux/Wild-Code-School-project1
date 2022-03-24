@@ -84,19 +84,13 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  font-family: var(--font-family);
-  color: var(--font-color);
-  text-align: left;
-  font-size: 1.5rem;
-}
-
 .popup p {
   font-family: var(--font-family);
   color: var(--font-color);
   text-align: center;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 input[type="submit"] {
@@ -106,8 +100,10 @@ input[type="submit"] {
   justify-content: center;
   min-width: fit-content;
   margin: auto;
-  margin-bottom: 0.6rem;
-  margin-top: 0.6rem;
+  color: var(--font-color);
+  text-shadow: 1px 1px 1px white;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   padding: 15px;
   border-radius: 150px;
   font-size: 1.5rem;
@@ -142,6 +138,8 @@ input[type="submit"]:hover {
   color: var(--font-color);
   text-align: center;
   font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 /*MEDIA QUERIES*/
@@ -158,7 +156,35 @@ input[type="submit"]:hover {
   }
   svg {
     width: 200%;
+    max-width: fit-content;
     margin: 10% -50%;
     align-self: center;
+  }
+  @-moz-document url-prefix() {
+    @media screen and (min-width: 1100px) {
+    svg {
+      width: 70%;
+      margin-left: 15%;
+    }
+  }}
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .cuistotsimg > img {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 10% 0%;
+  }
+  svg {
+    width: 170%;
+    margin-left: -35%;
+  }
+  @-moz-document url-prefix() {
+    @media screen and (min-width: 500px) and (max-width: 1100px) {
+    svg {
+      width: 70%;
+      margin-left: 15%;
+    }}
   }
 }

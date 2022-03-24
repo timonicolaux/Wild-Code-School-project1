@@ -4,32 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("gz1qumuVuLt8cao9j");
+    })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_d3soh6n', 'template_pciwueo', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../nav-footer/nav-style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="../img/lescuistots3.png" type="image/x-icon">
   </head>
   <body>
    <header>
-      <nav class="navbar">
-        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a class="active" href="../index.html">Accueil</a></li>
-            <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
-            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
-            <li><a href="../form/form.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar">
+      <img class="logo" src="../img/lescuistotsnav.png" />
+      <a href="#" class="toggle-button">
+        <span class="bar2"></span>
+      </a>
+        <ul class="navbar-links">
+          <li class="navbar-link"><a class="active" href="../index.html">Accueil</a></li>
+          <li class="navbar-link"><a href="../chefs/chefs.html">Les Chefs</a></li>
+          <li class="navbar-link"><a href="../quiz/quiz.html">Quizz</a></li>
+          <li class="navbar-link"><a href="/form/form.html">Contact</a></li>
+        </ul>
+    </nav>
     </header>
     <div class="content">
       <h1>Contactez-nous</h1>
@@ -41,8 +60,8 @@
             alt="pictogramme email"
           />
           <p>
-            <a class="contact" href="mailto:les-cuisetot-de-la-wild@gmail.com">
-              les-cuisetot-de-la-wild@gmail.com
+            <a class="contact" href="mailto:lescuistotsdelawild@gmail.com">
+              lescuistotsdelawild@gmail.com
             </a>
           </p>
         </div>
@@ -63,19 +82,23 @@
           <p class="contact">17 Rue Delandine, 69002 Lyon</p>
         </div>
       </section>
-      <form action="">
+      <form class= form name= "contact" action="" id="contactForm">
+        <input type="hidden" name="contact_number">
         <label for="name">Votre nom</label>
-        <input id="name" ype="text" placeholder="Paul Bocuse" class="form_name" />
+        <input id="name" type="text" placeholder="Paul Bocuse" class="form_name" name="name" required="required"/>
         <label for="email">Votre email</label>
         <input
           id="email" type="email"
           placeholder="paul.bocuse@gmail.com"
           class="form_email"
+          name="email"
+          required="required"
         />
         <label for="message">Votre message</label>
-        <input type="text" id="message" placeholder="Message" class="form_message" />
+        <input type="text" id="message" placeholder="Message" class="form_message" name="message" required="required"/>
         <input type="submit" value="Envoyer" class="form_button" />
       </form>
+    <div class="formValid"></div>
     </div>
     <footer>
       <div class="footer-container">
@@ -84,5 +107,7 @@
     </footer>
     <script src="../nav-footer/nav-script.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
+

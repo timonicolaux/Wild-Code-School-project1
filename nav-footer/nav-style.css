@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  width: 100%;
 }
 
 .navbar {
@@ -15,25 +16,32 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 50px;
+  white-space: nowrap;
 }
 
 .navbar > img {
-  max-width: 80px;
+  margin-top: 10px;
+  margin-left: 15px;
+  max-width: 130px;
 }
 
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
+  margin-top: 15px;
 }
 
 .navbar li {
   list-style: none;
   font-family: var(--font-family);
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-right: 30px;
 }
 .navbar li:hover {
-  background-color: rgb(225, 233, 233);
-  border-radius: 25px;
+  background-color: rgb(225, 233, 233, 0.5);
+  border-radius: 15px;
 }
 
 .navbar li a {
@@ -58,12 +66,66 @@ body {
   height: 21px;
 }
 
-.toggle-button .bar {
+.toggle-button .bar2 {
   height: 3px;
   width: 100%;
   background-color: black;
   border-radius: 10px;
+  transition: 0.5s ease;
 }
+
+.navbar-link > a {
+  transition: all 0.4s ease-in-out;
+}
+.navbar-link > a:hover {
+  letter-spacing: 3px;
+}
+/* effet sous-titre */
+
+.navbar-link > a::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s;
+}
+.navbar-link:hover > a::after {
+  width: 100%;
+}
+
+/* MENU BURGER */
+
+.toggle-button .bar2::before,
+.toggle-button .bar2::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.toggle-button .bar2::before {
+  transform: translateY(-10px);
+}
+.toggle-button .bar2::after {
+  transform: translateY(10px);
+}
+
+/* ANIMATION CROIX */
+
+.toggle-button.open .bar2 {
+  background: transparent;
+}
+.toggle-button.open .bar2::before {
+  transform: rotate(45deg);
+}
+.toggle-button.open .bar2::after {
+  transform: rotate(-45deg);
+}
+
+/**/
 
 footer {
   width: 100%;
@@ -77,30 +139,59 @@ footer {
   font-family: var(--font-family);
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 500px) {
   .toggle-button {
     display: flex;
   }
   .navbar-links {
-    display: none;
+    display: flex;
+    position: fixed;
+    right: -100%;
     width: 100%;
+    flex-direction: column;
+    height: calc(100vh - 50px);
+    top: 50px;
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(225, 233, 233, 0.9);
+  }
+
+  .show-nav .navbar-links {
+    right: 0;
+  }
+
+  .navbar-link > a {
+    transition: all 0.4s ease-in-out;
+  }
+  .navbar-link > a:hover {
+    letter-spacing: 3px;
   }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
   .navbar-links li {
     text-align: center;
+    margin-top: 40px;
+    margin-right: 0;
   }
   .navbar-links li a {
     padding: 0.5rem 1rem;
   }
   .navbar-links.active {
     display: flex;
+  }
+
+  .navbar li:hover {
+    background-color: rgb(225, 233, 233);
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .navbar-links li {
+    margin-right: -10px;
+    font-size: 1.2rem;
   }
 }

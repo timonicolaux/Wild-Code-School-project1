@@ -8,26 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="caroussel.css">
     <link rel="stylesheet" href="../nav-footer/nav-style.css" />
+	<link rel="shortcut icon" href="../img/lescuistots3.png" type="image/x-icon">
     <title>recette de la choucroute</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <img class="logo" src="../img/toque-c-est-moi-le-chef.png" />
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a class="active" href="../index.html">Accueil</a></li>
-            <li><a href="../chefs/chefs.html">L'equipe des chefs</a></li>
-            <li><a href="../recette/recette-boeuf-bourguignon.html">Les recettes</a></li>
-            <li><a href="../form/form.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+		<nav class="navbar">
+			<img class="logo" src="../img/lescuistotsnav.png" />
+			<a href="#" class="toggle-button">
+			  <span class="bar2"></span>
+			</a>
+			  <ul class="navbar-links">
+				<li class="navbar-link"><a class="active" href="../index.html">Accueil</a></li>
+				<li class="navbar-link"><a href="../chefs/chefs.html">Les Chefs</a></li>
+				<li class="navbar-link"><a href="../quiz/quiz.html">Quizz</a></li>
+				<li class="navbar-link"><a href="../form/form.html">Contact</a></li>
+			  </ul>
+		  </nav>
     </header>
     <div class="caroussel">
       <div class="slideshow-container">
@@ -49,10 +46,10 @@
       <br>
       <br>
       <div class="dot-btn">
-      	<span class="dot" onclick="currentSlide(1)"></span>
-      	<span class="dot" onclick="currentSlide(2)"></span>
-      	<span class="dot" onclick="currentSlide(3)"></span>
-      	<span class="dot" onclick="currentSlide(4)"></span>
+      	<span class="dot"></span>
+      	<span class="dot"></span>
+      	<span class="dot"></span>
+      	<span class="dot"></span>
       </div>
     </div>
     <h1>La choucroute</h1>
@@ -86,7 +83,9 @@
       </div>
     </div>	
       <div class="main-container">
-	<div class="progress-bar"></div>
+	<div class="progress-bar">
+	  <div class="red" id="bar"></div>
+	</div>
 	<div class="block one">
   	  <img class="first-img"src="../img/choux.jpg" alt="choux">
 	  <div class="space"></div>
@@ -180,12 +179,12 @@
       </div>
     </section>
     <footer>
+		<img class="arrow-up" src="../img/arrow-up.png" alt="arrow-up">		
       <div class="footer-container">
         <p>LES CUISTOS © 2022 Tous droits réservés.</p>
       </div>
     </footer>
     <script type="text/javascript" src="caroussel.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="../nav-footer/nav-script.js"></script>
   </body>
   </html>
