@@ -3,6 +3,7 @@
 }
 
 .slideshow-container {
+  z-index: 0;
   position: relative;
   max-height: 60%;
   left: 23%;
