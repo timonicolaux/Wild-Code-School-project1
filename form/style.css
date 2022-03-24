@@ -23,7 +23,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 1.4em;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -132,15 +132,20 @@ label {
 
 }
 
+.formValid > h1 {
+  font-size: 1.3em;
+}
 
 .formValid > p {
-  font-size: 1.3em;
+  font-size: 1em;
+  font-weight: 100;
   text-align: center;
 }
 
 .formValid > img {
   width: 100%;
   margin-top: 40px;
+  border-radius: 4px;
 }
 
 /* DESKTOP */
@@ -148,14 +153,11 @@ label {
 @media screen and (min-width: 500px) {
   body {
     background-image: url("../img/desktop-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
   }
 
   h1 {
     font-size: 2.2em;
+    margin-top: 75px;
   }
 
   .picto {
@@ -185,4 +187,30 @@ label {
   .contact {
     margin-left: 20px;
   }
+
+
+.formValid {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+
 }
+
+.formValid > h1 {
+  font-size: 1.9em;
+}
+
+
+.formValid > p {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.formValid > img {
+  width: 70%;
+margin: 0 15%;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+}
+

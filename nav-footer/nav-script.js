@@ -1,6 +1,16 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const navBar = document.querySelector(".navbar");
+let menuOpen = false;
 
 toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
+  navBar.classList.toggle("show-nav");
+
+  if (!menuOpen) {
+    toggleButton.classList.add("open");
+    menuOpen = true;
+  } else {
+    toggleButton.classList.remove("open");
+    menuOpen = false;
+  }
 });
