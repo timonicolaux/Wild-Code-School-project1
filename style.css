@@ -163,8 +163,28 @@ input[type="submit"]:hover {
   @-moz-document url-prefix() {
     @media screen and (min-width: 1100px) {
     svg {
-      width: 50%;
-      margin-left: 25%;
+      width: 70%;
+      margin-left: 15%;
     }
   }}
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .cuistotsimg > img {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 10% 0%;
+  }
+  svg {
+    width: 170%;
+    margin-left: -35%;
+  }
+  @-moz-document url-prefix() {
+    @media screen and (min-width: 500px) and (max-width: 1100px) {
+    svg {
+      width: 70%;
+      margin-left: 15%;
+    }}
+  }
 }
