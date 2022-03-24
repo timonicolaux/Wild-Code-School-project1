@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/lescuistots3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../nav-footer/nav-style.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <img class="logo" src="../img/lescuistotsnav.png" />
+          <a href="#" class="toggle-button">
+            <span class="bar2"></span>
+          </a>
+            <ul class="navbar-links">
+              <li class="navbar-link"><a class="active" href="../index.html">Accueil</a></li>
+              <li class="navbar-link"><a href="../chefs/chefs.html">Les Chefs</a></li>
+              <li class="navbar-link"><a href="../quiz/quizz.html">Quizz</a></li>
+              <li class="navbar-link"><a href="../form/form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">QUIZZTO</h1>
+    
+    <div class="photo-container"><img src="" alt="chef" class="image"></div>
+    
+
+    <main class="main-container">
+        <div class="quiz-container" id="quiz">
+            
+            
+            <div class="quiz-header">
+                <h2 id="question">Quel est le nom du plat que vous voyez dans l'image?</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Pates</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Riz</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Pizza</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Burger</label>
+                    </li>
+                </ul>
+                <button id="submit">Envoyer</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <p>LES CUISTOS © 2022 Tous droits réservés.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="../nav-footer/nav-script.js"></script>
+</body>
+</html>

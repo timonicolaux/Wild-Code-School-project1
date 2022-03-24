@@ -24,7 +24,12 @@ body {
   height: 150px;
 }
 
+.hide-caroussel {
+  display: none;
+}
+
 .caroussel img {
+  z-index: -1;
   border-radius: 10px;
   width: 200px;
   height: 120px;
@@ -130,8 +135,7 @@ h1:after {
   display: flex;
   flex-direction: column;
   position: relative;
-  //justify-content: space-around;
-  //width: 100vw;
+  margin-bottom: 50px;
 }
 
 .main-container p {
@@ -158,7 +162,6 @@ h1:after {
 }
 
 .block {
-  //margin: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -180,7 +183,7 @@ h1:after {
 }
 
 .space {
-  flex: 2;
+  flex: 1;
 }
 
 .two {
@@ -206,14 +209,41 @@ p:first-letter {
   top: 0;
   right: 47%;
   align-self: center;
-  width: 20px;
+  width: 15px;
   background-color: #ded8d2;
   height: 100%;
   z-index: 10;
   border-radius: 10px;
 }
 
+.red {
+  background-color: #fa7b5d;
+  border-radius: 10px;
+}
+
+.scrollTop {
+  font-size: 1.5em;
+}
+
+.arrow-up {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
 @media screen and (min-width: 500px) {
+  body {
+    margin: 0;
+    background-color: #f9f7f7;
+    font-family: roboto;
+    background-image: url("../img/desktop-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .head-container {
     max-width: 50%;
     margin-left: auto;
@@ -222,7 +252,7 @@ p:first-letter {
 
   .recipe-infos {
     justify-content: space-between;
-    max-width: 45%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -232,11 +262,15 @@ p:first-letter {
     width: 60px;
     border-radius: 20px;
   }
+  .caroussel {
+    margin-top: 20px;
+    height: 300px;
+  }
 
-  .main-img {
-    width: 40%;
-    height: 30%;
-    border-radius: 20px;
+  .caroussel img {
+    border-radius: 10px;
+    width: 350px;
+    height: 240px;
   }
 
   h1 {
@@ -299,47 +333,10 @@ p:first-letter {
   }
 
   .block {
-    height: 45vh;
+    height: auto;
+  }
+
+  .arrow-up {
+    margin-left: 20px;
   }
 }
-
-/*
-   IMG
-   
-   .first-img {
-   width: 70px;
-   height: 120px;
-   margin-left: 10px;
-   }
-
-   .fourth-img {
-   width: 70%;
-   height: 17%;
-   margin-right: 10px;
-   }
-
-   .second-img {
-   width: 60%;
-   height: 18%;
-   margin-right: 10px;
-   }
-
-   .fifth-img {
-   width: 70px;
-   height: 120px;
-   margin-left: 10px;
-   }
-
-   .third-img {
-   width: 50%;
-   height: 15%;
-   border-radius: 5px;
-   margin-left: 10px;
-   }
-
-   .sixth-img {
-   width: 50%;
-   height: 15%;
-   margin-right: 10px;
-   }
- */
